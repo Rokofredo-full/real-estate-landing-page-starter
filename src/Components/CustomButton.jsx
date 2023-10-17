@@ -18,8 +18,8 @@ const CustomButton = ({backgroundColor,color,buttonText,heroBtn,guideBtn,getStar
       borderColor: backgroundColor
     },
     [theme.breakpoints.down("md")]:{
-      margin: (heroBtn || getStartedBtn) && theme.spacing(0,"auto",3,"auto"),
-      width: (heroBtn || getStartedBtn) && 90%
+      margin: (heroBtn || getStartedBtn) && theme.spacing(0,"auto", 3,"auto"),
+      width: (heroBtn || getStartedBtn) && "90%"
     },
     [theme.breakpoints.down("sm")]:{
       marginTop: guideBtn && theme.spacing(3),
