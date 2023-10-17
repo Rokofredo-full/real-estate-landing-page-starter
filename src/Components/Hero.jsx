@@ -57,7 +57,17 @@ const Hero = () => {
           >
             Be the first to get the best real estate deals before they hit themass market! Hot foreclosure deals with one simple search!
           </Typography>
-          <CustomButton backgroundColor="#0F1B4C" color="#fff" buttonText="More About Us" heroBtn={true}/>
+          <CustomButton 
+          backgroundColor="#0F1B4C" 
+          color="#fff" 
+          buttonText="More About Us" 
+          heroBtn={true}
+          />
+          <Box sx={{flex: "1.25"}}>
+            <img src={heroImg} alt="heroImg"
+            style={{maxWidth:"100%", marginBottom: "2rem"}}
+
+          </Box>
         </Box>
       </CustomBox>
     </Container>

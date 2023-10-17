@@ -22,11 +22,34 @@ import {
 import { useState } from "react";
 
 export const Navbar = () => {
-  const NavLink = styled(Typography)(({ theme }) => ({}));
+  const NavLink = styled(Typography)(({ theme }) => ({
+    fontSize: "14px",
+    color: "#4F5361",
+    fontWeight:"bold",
+    cursor:"pointer",
+    "&:hover":{
+      color: "#fff",
+    },
+  }));
 
-  const NavbarLinksBox = styled(Box)(({ theme }) => ({}));
+  const NavbarLinksBox = styled(Box)(({ theme }) => ({
+    display:"flex",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: theme.spacing(3),
+    [theme.breakpoints.down("md")]:{
+      display: "none",
+    },
+  }));
 
-  const CustomMenuIcon = styled(MenuIcon)(({ theme }) => ({}));
+  const CustomMenuIcon = styled(MenuIcon)(({ theme }) => ({
+    cursor: "pointer",
+    display:"none",
+    marginRight: theme.spacing(2),
+    [theme.breakpoints.down("md")]:{
+      display: "block",
+    },
+  }));
 
   const NavbarContainer = styled(Container)(({ theme }) => ({}));
 
