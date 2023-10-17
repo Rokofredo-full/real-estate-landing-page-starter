@@ -12,7 +12,7 @@ const Hero = () => {
     justifyContent: "center",
     gap: theme.spacing(5),
     MarginTop:theme.spacing(3),
-    [theme.breakpoints.down("sm")]:{
+    [theme.breakpoints.down("md")]:{
       flexDirection: "column",
       alignItems: "center",
       textAlign: "center"
