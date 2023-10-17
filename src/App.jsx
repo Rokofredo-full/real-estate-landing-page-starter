@@ -1,9 +1,13 @@
+import Companies from "./Components/Companies";
 import Hero from "./Components/Hero";
 
 function App() {
-  return <>
-  <Hero/>
-  </>;
+  return (
+  <>
+    <Hero/>
+    <Companies/>
+  </>
+  );
 }
 
 export default App;
